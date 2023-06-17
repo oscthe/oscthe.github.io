@@ -1,0 +1,43 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rogue
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Oscar Thelander
+tagline:          'A Jekyll theme'
+description:      'A blog.'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Oscar Thelander'
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
+
+gems:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+plugins: [jekyll-paginate]
+paginate_path: "page:num"
+kramdown:
+  input: GFM
+  hard_wrap: false
+github: [metadata]
