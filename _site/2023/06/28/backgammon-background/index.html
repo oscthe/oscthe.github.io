@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Backgammon math and theory &middot; Positive Analysis
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="f_2" sizes="144x144" href="/public/f_2.png">
+                                 <link rel="shortcut icon" href="/public/f_2.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Positive Analysis
+        </a>
+      </h1>
+      <p class="lead">Oscar T</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/readings/">Reading</a>
+          
+        
+      
+        
+          
+        
+      
+
+    </nav>
+
+    <p style="font-size: 16px;">&copy; 2025. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Backgammon math and theory</h1>
+  
+  <div>
+      <!-- Snippet to calculate reading time assuming WPM 200 -->
+<span style="display: inline" class="post-date" title="Estimated read time">
+    28 Jun 2023 &middot;
+  3 min read
+</span>
+      &emsp;
+       <span style="display:inline">[
+           
+           <a href="/category/data-analysis">data-analysis</a>
+       ]</span>
+  </div>
+  <br>
+  <p>I recently started playing a bit of backgammon. While playing (and losing), the analysis section of the <a href="https://www.backgammongalaxy.com/">app</a> peeked my interest for the mathematics that govern the game. Since I eventually want to win, I thought I needed to do a bit of exploration.
+<!--more--></p>
+
+<center>
+<img src="/public/backgammon-board-game.jpg" style="width:80%;" />
+</center>
+
+<h2 id="the-board-and-checkers">The Board and Checkers</h2>
+
+<p>Before delving into the mathematics, I believe a basic overview of the gameplay is appropriate. Backgammon is played on a board with 24 narrow triangles called points. Each player has 15 checkers of their color, and they start in specific positions on the board:</p>
+
+<center>
+<img src="/public/home-board-example.gif" style="width:50%;" />
+</center>
+
+<p>The game is played using two dices. The players takes turn to roll the dices which determine the movement of the checkers. The goal is to move all of your checkers around the board and then off the board (called <strong>bear off</strong>). You can begin to move pieces off the board once you have all your pieces in your home board.</p>
+
+<p>As mentioned, the rolling of the dices determine the moves that are possible. The two dice constitute two separate movements, for example, if a player rolls</p>
+
+<p>Except dices, checkers and triangles there is also a piece called the doubling cube. Usually a game of backgammon is played over several rounds (first to 1, 3, 5, 7, … rounds) where a player can increase the stakes of a round by proposing to double the current stake. The opponent then either accepts (<strong>takes</strong>) the doubled stakes or does not accept (<strong>drops</strong>) in which case the opponent forfeits the round. If the opponent takes, the accepting party becomes the owner of the cube and the cube is turned such that 2 is facing upwards. The opponent can then choose to double the stakes again (<strong>redouble</strong>) and the same take/drop-sequence is repeated, once again potentially transferring the ownership of the doubling cube.</p>
+
+<h2 id="probability-and-dice-rolls">Probability and Dice Rolls</h2>
+
+<p>The first significant mathematical aspect of backgammon is probability. The dice rolls are random, and understanding the probabilities can give players a strategic advantage. There are 36 possible combinations when rolling two six-sided dice (6 faces x 6 faces). Some rolls are more likely than others. For example, there’s only one way to roll a 2 (1-1), while there are six ways to roll a 7 (1-6, 2-5, 3-4, 4-3, 5-2, 6-1).</p>
+
+<p>Knowing the probabilities can help you make informed decisions about which moves to make during the game. Players often use probability calculations to assess their chances of hitting an opponent’s blot (a single exposed checker) or avoiding being hit themselves.</p>
+
+<h2 id="pip-count">Pip Count</h2>
+
+<p>asdasd</p>
+
+<h2 id="match-equity">Match equity</h2>
+
+<p>oaskdoasdk</p>
+
+<h2 id="the-doubling-cube">The Doubling Cube</h2>
+
+<p>Another interesting mathematical element in backgammon is the doubling cube. This cube is marked with the numbers 2, 4, 8, 16, 32, and 64. Players can use the doubling cube to increase the stakes of the game. If a player believes they have a significant advantage, they can offer to double the current wager. The opponent then has the option to accept (“take”) the double and continue the game at the new higher stake or resign and lose the current game.</p>
+
+<p>The decision of whether to accept a double requires some calculation. Players need to consider their current position, the probability of winning from that point, and the potential risks of accepting the double and losing more points.</p>
+
+<p>##</p>
+
+<p>sdniosdnfion</p>
+
+<h2 id="game-theory">Game Theory</h2>
+<p>Backgammon also touches upon the field of game theory, which studies the interactions and strategies of rational decision-makers in games. As a two-player game with perfect information (both players can see the entire state of the game), backgammon has been studied extensively in game theory.</p>
+
+<p>Game theory concepts come into play during doubling decisions and in some complex scenarios where players have to decide between aggressive and defensive moves.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Backgammon may seem like a simple game of rolling dice and moving checkers, but the underlying mathematics add a layer of depth and complexity that truly makes it a game of skill and strategy. Understanding the probabilities of dice rolls, bear-off strategies, the doubling cube, and even some elements of game theory can elevate your backgammon play to a whole new level.</p>
+
+<p>So, the next time you sit down for a game of backgammon, remember that the numbers and probabilities on the dice have a lot more to say about the game than you might think! Happy playing!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+
+    
+    
+    
+        
+            <li>
+              <h3>
+                <a href="/2023/06/29/missing-data-part2/">
+                  Missing or corrupted data part 2: Practical applications
+                  <small>29 Jun 2023</small>
+                </a>
+              </h3>
+            </li>
+        
+    
+        
+    
+    
+    
+      <li>
+        <h3>
+          <a href="/2023/06/29/missing-data-part2/">
+            Missing or corrupted data part 2: Practical applications
+            <small>29 Jun 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+    </div>
+
+  </body>
+</html>
